@@ -1,0 +1,10 @@
+<ion-view title="Select Branch">				
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="branch in branches" href="#/branches/{{serviceId}}/{{branch.id}}">
+				{{ branch.name }}
+				<span class="item-note">{{ (branch.distance * 0.001) | number:2 }} km</span>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,35 @@
+<ion-view title="{{ branch.name }}">				
+	<ion-content>
+		<br/>
+		<ion-refresher pulling-text="Pull to refresh..." on-refresh="getBranch()"></ion-refresher>
+		<div class="card">
+			<div class="item item-text-wrap item-body">
+				<div class="row row-top">
+					<div class="col"><strong>Address:</strong></div>
+					<div class="col">
+						<address> 
+							{{ branch.addressLine1 }}<br>
+							{{ branch.addressLine2 }}<br>
+							{{ branch.addressLine3 }}<br>
+							{{ branch.addressLine4 }}<br>
+							{{ branch.addressLine5 }}<br>
+							{{ branch.addressPostalCode }}
+						</address>
+					</div>
+				</div>
+				<div class="row row-top">
+					<div class="col"><strong>Open Times:</strong></div>
+					<div class="col">{{ branch.openTime}} - {{ branch.closeTime}}</div>
+				</div>
+				<div class="row row-top">
+					<div class="col"><strong>Waiting Time:</strong></div>
+					<div class="col">{{ branch.estimatedWaitTime | number:0 }} mins</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="padding">
+			<button class="button button-block button-positive icon-left ion-printer" ng-click="getTicket()" ng-disabled="!branch.branchOpen || branch.queuePassesClosingTime">Get Ticket</button>
+		</div>
+	</ion-content>
+</ion-view>

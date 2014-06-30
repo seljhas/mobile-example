@@ -1,0 +1,19 @@
+
+.ticket-background{
+	
+}
+
+.ticket{
+	text-align: center;
+	height: 254px;
+	background: url("../img/ticket.png") center center;
+	background-repeat: no-repeat;
+}
+
+.ticket h1 {
+	font-size: 56px;
+	font-weight: bold;
+	line-height: 1.1;
+	color: #444444;
+	text-rendering: optimizeLegibility;
+}

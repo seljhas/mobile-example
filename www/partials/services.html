@@ -1,0 +1,10 @@
+<ion-view title="Select Services">		
+	<ion-content>
+		<ion-refresher pulling-text="Pull to refresh..." on-refresh="getServices()"></ion-refresher>
+		<ion-list>
+			<ion-item ng-repeat="service in services" href="#/branches/{{service.id}}">
+				{{ service.name }}
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
