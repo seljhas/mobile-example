@@ -1,4 +1,4 @@
-###mobile-example
+#mobile-example
 Hybrid mobile app example demonstrating [Qmatic](http://www.qmatic.com) mobile API using [Ionic Framework](http://ionicframework.com/)
 
 ##Overview
@@ -21,3 +21,10 @@ Works with the [betwixt](https://github.com/qmatic/betwixt) middleware example.
 		$ ionic emulate ios
 
 For more information see the [Ionic documentation](http://ionicframework.com/docs/)
+
+##Screenshots
+![mobile-1](mobile-1.png)
+![mobile-2](mobile-2.png)
+![mobile-3](mobile-3.png)
+![mobile-4](mobile-4.png)
+![mobile-5](mobile-5.png)
